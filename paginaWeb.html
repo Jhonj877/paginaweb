@@ -1,0 +1,612 @@
+<!-- Edición para commit: cambio menor -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Panebianco Americano - Educación de Excelencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">PA</div>
+                <h1 class="text-xl font-bold text-blue-800">Panebianco <span class="text-blue-600">Americano</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-blue-800 font-medium hover:text-blue-600 transition">Inicio</a>
+                <a href="#nosotros" class="text-gray-600 font-medium hover:text-blue-600 transition">Nosotros</a>
+                <a href="#programas" class="text-gray-600 font-medium hover:text-blue-600 transition">Programas</a>
+                <a href="#instalaciones" class="text-gray-600 font-medium hover:text-blue-600 transition">Instalaciones</a>
+                <a href="#contacto" class="text-gray-600 font-medium hover:text-blue-600 transition">Contacto</a>
+            </nav>
+            <button class="md:hidden text-gray-600" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full py-2 px-4 shadow-lg" id="mobile-menu">
+            <a href="#inicio" class="block py-2 text-blue-800 font-medium">Inicio</a>
+            <a href="#nosotros" class="block py-2 text-gray-600 font-medium">Nosotros</a>
+            <a href="#programas" class="block py-2 text-gray-600 font-medium">Programas</a>
+            <a href="#instalaciones" class="block py-2 text-gray-600 font-medium">Instalaciones</a>
+            <a href="#contacto" class="block py-2 text-gray-600 font-medium">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Excelencia Educativa Bilingüe</h1>
+                <p class="text-xl md:text-2xl mb-6 opacity-90">Formando líderes globales con valores humanos desde 1985</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#contacto" class="bg-white text-blue-800 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300 text-center">Solicitar Información</a>
+                    <a href="#programas" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-800 transition duration-300 text-center">Nuestros Programas</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Estudiantes del Panebianco Americano" class="rounded-xl shadow-2xl floating max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md transition duration-300 text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">37+</div>
+                    <div class="text-gray-600">Años de experiencia</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md transition duration-300 text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
+                    <div class="text-gray-600">Egresados universitarios</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md transition duration-300 text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">12:1</div>
+                    <div class="text-gray-600">Ratio estudiante-profesor</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-xl shadow-md transition duration-300 text-center">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">10%</div>
+                    <div class="text-gray-600">Bilingües al graduarse</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Nuestra Historia y Filosofía</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Colegio Panebianco Americano" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Fundado en 1985 con una visión de futuro</h3>
+                    <p class="text-gray-600 mb-4">El Colegio Panebianco Americano nació del sueño de su fundador, el Dr. Ricardo Panebianco, de crear una institución educativa que combinara lo mejor de la educación norteamericana con los valores latinoamericanos.</p>
+                    <p class="text-gray-600 mb-6">Hoy, somos reconocidos como uno de los colegios bilingües más prestigiosos del país, formando estudiantes críticos, creativos y comprometidos con su comunidad.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Misión</h4>
+                                <p class="text-gray-600">Formar ciudadanos globales con excelencia académica, dominio del inglés y español, y compromiso con los valores humanos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-eye text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Visión</h4>
+                                <p class="text-gray-600">Ser el referente en educación bilingüe innovadora, reconocido por su excelencia académica y formación integral.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-heart text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Valores</h4>
+                                <p class="text-gray-600">Respeto, integridad, excelencia, responsabilidad social y pensamiento crítico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programas" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Nuestros Programas Educativos</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ofrecemos una educación integral desde los primeros años hasta la preparación universitaria</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-child text-blue-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Educación Inicial</h3>
+                        <p class="text-gray-600 mb-4">Para niños de 3 a 5 años. Programa de inmersión al inglés con enfoque en desarrollo socioemocional y descubrimiento del mundo.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Inglés natural a través del juego</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Desarrollo de habilidades motoras</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Estimulación temprana</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-book text-blue-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Educación Primaria</h3>
+                        <p class="text-gray-600 mb-4">De 1° a 6° grado. Programa bilingüe con currículo internacional enriquecido con arte, tecnología y deportes.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> 70% de clases en inglés</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Programa STEAM integrado</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Desarrollo de proyectos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-graduate text-blue-600 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Educación Secundaria</h3>
+                        <p class="text-gray-600 mb-4">De 7° a 12° grado. Programa pre-universitario con Bachillerato Internacional y certificaciones internacionales.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Diploma IB (Bachillerato Internacional)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> SAT/TOEFL preparation</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Orientación vocacional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Ver todos los programas <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="instalaciones" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Nuestras Instalaciones</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Infraestructura diseñada para el aprendizaje y desarrollo integral</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Biblioteca" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Biblioteca Bilingüe</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1571260899304-42eee36f2aad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Laboratorios" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Laboratorios de Ciencias</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1540759786425-13ff41fb0d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Canchas deportivas" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Áreas Deportivas</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1591123710899-2689847616e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Aulas tecnológicas" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Aulas Tecnológicas</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Teatro" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Auditorio y Teatro</h3>
+                    </div>
+                </div>
+                
+                <div class="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cafetería" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-2xl font-bold">Cafetería Saludable</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 rounded-xl p-8 md:p-12">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">Visita Nuestras Instalaciones</h3>
+                        <p class="text-gray-600 mb-6">Agenda un tour guiado para conocer nuestro campus, aulas especializadas y áreas comunes. Nuestro equipo estará encantado de mostrarte cómo aprenden nuestros estudiantes.</p>
+                        <a href="#contacto" class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Agendar Visita <i class="fas fa-calendar-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <iframe class="w-full h-64 md:h-80 rounded-xl shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tour Virtual Colegio Panebianco Americano" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Lo que dicen de nosotros</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">JP</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Juan Pérez</h4>
+                            <p class="text-gray-500 text-sm">Padre de familia</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"El nivel de inglés que mi hija alcanzó en Panebianco Americano le permitió ingresar directamente a una universidad en Canadá sin necesidad de cursos adicionales."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">MG</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">María González</h4>
+                            <p class="text-gray-500 text-sm">Egresada 2020</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"La formación integral que recibí en el colegio me dio las herramientas para destacar en la universidad y en mi vida profesional. El programa IB fue un diferenciador clave."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold mr-4">LR</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Laura Ramírez</h4>
+                            <p class="text-gray-500 text-sm">Profesora de Ciencias</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Trabajar en Panebianco Americano ha sido una experiencia enriquecedora. Los recursos pedagógicos y el apoyo institucional permiten desarrollar lo mejor de cada estudiante."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contáctanos</h2>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">Estamos para responder tus preguntas y guiarte en el proceso de admisión</p>
+                <div class="w-20 h-1 bg-white mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Dirección</h4>
+                                <p class="opacity-90">Av. Educación 1234, Distrito Académico</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Teléfonos</h4>
+                                <p class="opacity-90">+1 (234) 567-8900</p>
+                                <p class="opacity-90">+1 (234) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Correo Electrónico</h4>
+                                <p class="opacity-90">info@panebiancoamericano.edu</p>
+                                <p class="opacity-90">admisiones@panebiancoamericano.edu</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Horario de Atención</h4>
+                                <p class="opacity-90">Lunes a Viernes: 7:30 am - 5:00 pm</p>
+                                <p class="opacity-90">Sábados: 9:00 am - 12:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Síguenos en redes sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 p-3 rounded-full hover:bg-opacity-30 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white rounded-xl shadow-xl p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Envía un Mensaje</h3>
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nombre Completo</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="interest" class="block text-gray-700 font-medium mb-2">Interés</label>
+                            <select id="interest" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700">
+                                <option value="">Seleccione una opción</option>
+                                <option value="admisiones">Admisiones</option>
+                                <option value="programas">Programas Académicos</option>
+                                <option value="visita">Visita Guiada</option>
+                                <option value="trabajo">Oportunidades de Trabajo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Enviar Mensaje <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-4">Suscríbete a nuestro boletín</h3>
+            <p class="max-w-2xl mx-auto mb-6 opacity-90">Recibe información sobre eventos, logros de nuestros estudiantes y novedades académicas directamente en tu correo.</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-700">
+                <button class="bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-r-lg font-bold transition duration-300">
+                    Suscribirse
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-3">PA</div>
+                        <h3 class="text-xl font-bold">Panebianco <span class="text-blue-400">Americano</span></h3>
+                    </div>
+                    <p class="text-gray-400">Formando líderes globales con excelencia académica y valores humanos desde 1985.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-gray-400 hover:text-white transition">Nosotros</a></li>
+                        <li><a href="#programas" class="text-gray-400 hover:text-white transition">Programas</a></li>
+                        <li><a href="#instalaciones" class="text-gray-400 hover:text-white transition">Instalaciones</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Admisiones</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Proceso de Admisión</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Requisitos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Becas y Financiamiento</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Agendar Visita</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Términos y Condiciones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Aviso Legal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Libro de Reclamaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Colegio Panebianco Americano. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-blue-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
