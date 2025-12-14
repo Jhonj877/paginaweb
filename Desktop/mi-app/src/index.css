@@ -1,0 +1,21 @@
+:root {
+  --base-font: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+*{ box-sizing: border-box; }
+
+html,body{
+  height:100%;
+  margin:0;
+  font-family: var(--base-font);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a{ color: inherit; }
+
+/* dejar control del fondo al componente principal */
+body{ min-width:320px; }
+
+button{ font-family: inherit; cursor: pointer; }
+
